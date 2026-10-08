@@ -1,0 +1,90 @@
+/* Reset básico mantendo margens para leitura */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+    line-height: 1.5;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Linha divisória */
+hr {
+    border: none;
+    border-top: 1px solid #000000;
+    margin: 20px 0;
+}
+
+/* Títulos e textos */
+h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Botões nativos do sistema */
+button {
+    font-family: inherit;
+    font-size: 14px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+/* Imagens */
+.celulares {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #000000;
+}
+
+/* Mensagem da demo simplificada */
+.mensagem-demo {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #000000;
+    background-color: #f0f0f0;
+}
+
+.mensagem-demo.ativo {
+    display: block;
+}
+
+/* Modo escuro simples (alto contraste) */
+body.dark {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body.dark button {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark .mensagem-demo {
+    background-color: #222222;
+    color: #ffffff;
+    border-color: #ffffff;
+}
